@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ListOfPatients()
+comment1.params=p
+comment1.target=void\ newPatient(Patient)
+comment2.params=
+comment2.target=java.util.ArrayList\ entireList()
+comment3.params=
+comment3.target=int\ size()
+comment4.params=i
+comment4.target=Patient\ get(int)
+numComments=5

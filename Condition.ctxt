@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=seenByDoctor
+comment0.target=Condition(boolean)
+comment1.params=symptoms\ temperature\ bloodPressureDiastolic\ bloodPressureSystolic\ heartRate\ arrivalDate\ seenByDoctor\ time
+comment1.target=Condition(java.lang.String,\ float,\ int,\ int,\ int,\ java.lang.String,\ boolean,\ long)
+comment2.params=symptons
+comment2.target=void\ symptons(java.lang.String)
+comment3.params=arrivalDate
+comment3.target=void\ arrivalDate(java.lang.String)
+comment4.params=seenByDoctor
+comment4.target=void\ seenByDoctor(boolean)
+comment5.params=time
+comment5.target=void\ time(long)
+numComments=6

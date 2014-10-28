@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Nurse()
+comment1.params=healthCardNumber\ name\ birthdate
+comment1.target=boolean\ newPatient(java.lang.String,\ java.lang.String,\ int)
+comment2.params=healthCardNumber\ symptoms\ temperature\ bloodPressureDiastolic\ bloodPressureSystolic\ heartRate\ arrivalDate\ seenByDoctor\ time
+comment2.target=boolean\ checkNewCondition(java.lang.String,\ java.lang.String,\ float,\ int,\ int,\ int,\ java.lang.String,\ boolean,\ long)
+comment3.params=healthCardNumber
+comment3.target=Patient\ viewPatientInfor(java.lang.String)
+comment4.params=
+comment4.target=void\ saveDataOnFile()
+numComments=5

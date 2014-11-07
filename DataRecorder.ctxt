@@ -1,4 +1,6 @@
 #BlueJ class context
 comment0.params=filename\ data
 comment0.target=boolean\ fileRecorder(java.lang.String,\ java.lang.String)
-numComments=1
+comment1.params=filename
+comment1.target=java.lang.String\ fileReader(java.lang.String)
+numComments=2

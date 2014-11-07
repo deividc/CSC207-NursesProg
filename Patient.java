@@ -4,17 +4,17 @@ public class Patient
 {
     private String healthCardNumber;
     private String name;
-    private int birthdate;
+    private String birthdate;
     private ArrayList listOfCondition;
     
     public Patient(){
         this.healthCardNumber = "";
         this.name = "";
-        this.birthdate = 0;
+        this.birthdate = "";
         listOfCondition = new ArrayList();
     }
     
-    public Patient(String healthCardNumber, String name, int birthdate){
+    public Patient(String healthCardNumber, String name, String birthdate){
         this.healthCardNumber = healthCardNumber;
         this.name = name;
         this.birthdate = birthdate;
@@ -37,7 +37,7 @@ public class Patient
         this.name = name;
     }
     
-    public void setBirthdate(int birthdate){
+    public void setBirthdate(String birthdate){
         this.birthdate = birthdate;
     }
     

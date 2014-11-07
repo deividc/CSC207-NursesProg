@@ -2,11 +2,15 @@
 comment0.params=
 comment0.target=Nurse()
 comment1.params=healthCardNumber\ name\ birthdate
-comment1.target=boolean\ newPatient(java.lang.String,\ java.lang.String,\ int)
+comment1.target=boolean\ newPatient(java.lang.String,\ java.lang.String,\ java.lang.String)
 comment2.params=healthCardNumber\ symptoms\ temperature\ bloodPressureDiastolic\ bloodPressureSystolic\ heartRate\ arrivalDate\ seenByDoctor\ time
 comment2.target=boolean\ checkNewCondition(java.lang.String,\ java.lang.String,\ float,\ int,\ int,\ int,\ java.lang.String,\ boolean,\ long)
 comment3.params=healthCardNumber
 comment3.target=Patient\ viewPatientInfor(java.lang.String)
 comment4.params=
 comment4.target=void\ saveDataOnFile()
-numComments=5
+comment5.params=
+comment5.target=void\ readPatientsFromFile()
+comment6.params=
+comment6.target=java.util.ArrayList\ listOfPatients()
+numComments=7

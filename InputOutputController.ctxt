@@ -3,4 +3,6 @@ comment0.params=list
 comment0.target=InputOutputController(ListOfPatients)
 comment1.params=filename
 comment1.target=void\ saveData(java.lang.String)
-numComments=2
+comment2.params=finename
+comment2.target=void\ patientsFromFile(java.lang.String)
+numComments=3

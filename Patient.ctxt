@@ -2,7 +2,7 @@
 comment0.params=
 comment0.target=Patient()
 comment1.params=healthCardNumber\ name\ birthdate
-comment1.target=Patient(java.lang.String,\ java.lang.String,\ int)
+comment1.target=Patient(java.lang.String,\ java.lang.String,\ java.lang.String)
 comment2.params=cond
 comment2.target=void\ newCondition(Condition)
 comment3.params=
@@ -12,7 +12,7 @@ comment4.target=void\ setHealthCardNumber(java.lang.String)
 comment5.params=name
 comment5.target=void\ setName(java.lang.String)
 comment6.params=birthdate
-comment6.target=void\ setBirthdate(int)
+comment6.target=void\ setBirthdate(java.lang.String)
 comment7.params=
 comment7.target=int\ urgency()
 comment8.params=

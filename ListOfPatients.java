@@ -1,3 +1,9 @@
+/*
+ * @author  Deivid Cavalcante da Silva
+ * @version 1.0.3
+ * @date    2014-11-08
+ */
+
 import java.util.ArrayList;
 
 public class ListOfPatients

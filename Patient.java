@@ -1,3 +1,9 @@
+/*
+ * @author  Deivid Cavalcante da Silva
+ * @version 1.0.1
+ * @date    2014-11-08
+ */
+
 import java.util.ArrayList;
 
 public class Patient
@@ -14,6 +20,13 @@ public class Patient
         listOfCondition = new ArrayList();
     }
     
+    /*
+     * Create a new Patient
+     * 
+     * @param       patient's health card number
+     * @param       patient's name
+     * @param       patient's birthdate
+     */
     public Patient(String healthCardNumber, String name, String birthdate){
         this.healthCardNumber = healthCardNumber;
         this.name = name;

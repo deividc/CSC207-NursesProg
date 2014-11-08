@@ -3,6 +3,7 @@ comment0.params=
 comment0.target=Patient()
 comment1.params=healthCardNumber\ name\ birthdate
 comment1.target=Patient(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\n\ Create\ a\ new\ Patient\n\ \n\ @param\ \ \ \ \ \ \ patient's\ health\ card\ number\n\ @param\ \ \ \ \ \ \ patient's\ name\n\ @param\ \ \ \ \ \ \ patient's\ birthdate\n
 comment2.params=cond
 comment2.target=void\ newCondition(Condition)
 comment3.params=

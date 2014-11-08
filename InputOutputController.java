@@ -1,3 +1,9 @@
+/*
+ * @author  Deivid Cavalcante da Silva
+ * @version 1.0.4
+ * @date    2014-11-08
+ */
+
 public class InputOutputController
 {
     private ListOfPatients listOfPatients;
@@ -10,7 +16,7 @@ public class InputOutputController
     }
     
     /*
-     * Save the List of Patients on file
+     * Save the List of Patients on a file
      */
     public void savePatients(String filename)
     {
@@ -24,7 +30,7 @@ public class InputOutputController
     }
     
     /*
-     * Save the list of conditions of each patient on file
+     * Save the list of conditions of each patient on a file
      */
     public void saveConditions(String filename)
     {
@@ -42,6 +48,8 @@ public class InputOutputController
      */
     public void patientsFromFile(String finename)
     {
+        listOfPatients.clear(); // WARNING: clear all the previous patients list to prevent double records. Save previous changes before reloading data
+        
         String data = new String();
         data = dataRecorder.fileReader(finename);
         
@@ -75,7 +83,6 @@ public class InputOutputController
             }
             else
             {
-                listOfPatients.clear(); // WARNING: clear all the previous patients list to prevent double records. Save previous changes before reloading data
                 Patient p = new Patient(healthCardNumber.toString(), name.toString(), birthdate.toString());
                 listOfPatients.newPatient(p);
                 
@@ -106,6 +113,9 @@ public class InputOutputController
         StringBuilder seenByDoctor = new StringBuilder();
         StringBuilder time = new StringBuilder();
         int controller = 0;
+        
+        StringBuilder test = new StringBuilder();
+        
         for(int i = 0; i < data.length(); i++)
         {
             if (data.charAt(i) != '\n')
@@ -148,12 +158,22 @@ public class InputOutputController
                     }
                 }
             }
-            else
-            {
+            else {
                 Condition c = new Condition(symptoms.toString(), Float.parseFloat(temperature.toString()),Integer.parseInt(bloodPressureDiastolic.toString()),
                 Integer.parseInt(bloodPressureSystolic.toString()), Integer.parseInt(heartRate.toString()), arrivalDate.toString(), Boolean.parseBoolean(seenByDoctor.toString()),
-                Long.parseLong(time.toString()));
-                
+                Long.parseLong(time.toString())); //Create a new condition with the information on records.
+
+                Patient tmp = new Patient();
+                for(int j = 0; j < listOfPatients.size(); j++) {
+                    tmp = listOfPatients.get(j);
+                    
+                    
+                    test.append(healthCardNumber.toString() + "         " + tmp.getHealthCardNumber() + " -> " + healthCardNumber.toString().equals(tmp.getHealthCardNumber()) + '\n'); //testing
+                    
+                    if(healthCardNumber.toString().equals(tmp.getHealthCardNumber())) {
+                        tmp.newCondition(c);
+                    }
+                }
                 
                 healthCardNumber.delete(0, healthCardNumber.length());
                 symptoms.delete(0, symptoms.length());
@@ -168,5 +188,7 @@ public class InputOutputController
             }
             
         }
+        
+        dataRecorder.fileRecorder("test.txt", test.toString());
     }
 }

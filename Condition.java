@@ -1,3 +1,8 @@
+/*
+ * @author  Deivid Cavalcante da Silva
+ * @version 1.0.2
+ * @date    2014-11-08
+ */
 
 public class Condition
 {

@@ -1,6 +1,6 @@
 /*
  * @author  Deivid Cavalcante da Silva
- * @version 1.0.1
+ * @version 1.0.2
  * @date    2014-11-08
  */
 
@@ -70,5 +70,14 @@ public class Patient
             tmp.append(healthCardNumber + ";" + listOfCondition.get(i).toString() + '\n');
         }
         return tmp.toString();
+    }
+    
+    /*
+     * Get the list of Condition of the specific patient
+     * 
+     * @return      list of conditions
+     */
+    public ArrayList<Condition> getListOfCondition() {
+        return listOfCondition;
     }
 }

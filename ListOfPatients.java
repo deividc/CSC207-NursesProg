@@ -32,5 +32,5 @@ public class ListOfPatients
     
     public void clear(){
         listOfPatients.clear();
-    }
+    } 
 }

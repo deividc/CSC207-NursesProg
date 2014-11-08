@@ -1,6 +1,7 @@
 #BlueJ class context
-comment0.params=filename\ data
+comment0.params=FILEPATH\ data
 comment0.target=boolean\ fileRecorder(java.lang.String,\ java.lang.String)
-comment1.params=filename
+comment0.text=\n\ Record\ a\ string\ of\ data\ in\ a\ file.\n\ \n\ @param\ \ \ \ \ \ \ the\ complete\ path\ of\ the\ file\ or\ just\ the\ name\ plus\ extension.\n\ \n\ @param\ \ \ \ \ \ \ string\ data\ previously\ formatted.\n\ \n\ @return\ \ \ \ \ \ boolean\ True\ for\ no\ exceptions,\ False\ for\ exceptions\n
+comment1.params=FILEPATH
 comment1.target=java.lang.String\ fileReader(java.lang.String)
 numComments=2

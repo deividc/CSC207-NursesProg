@@ -50,4 +50,12 @@ public class Patient
         String str = healthCardNumber + "," + name + "," + birthdate + "\n";
         return str;
     }
+    
+    public String conditionsToString(){
+        StringBuilder tmp = new StringBuilder();
+        for(int i = 0; i < listOfCondition.size(); i++){
+            tmp.append(healthCardNumber + ";" + listOfCondition.get(i).toString() + '\n');
+        }
+        return tmp.toString();
+    }
 }

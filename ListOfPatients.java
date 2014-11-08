@@ -23,4 +23,8 @@ public class ListOfPatients
     public Patient get(int i){
         return listOfPatients.get(i);
     }
+    
+    public void clear(){
+        listOfPatients.clear();
+    }
 }
